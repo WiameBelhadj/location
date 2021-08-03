@@ -2,10 +2,15 @@
 <odoo>
 	<!-- LE Menu d'Agence -->
 	<menuitem id="menu_agence" name="Agence" />
+	
+	<!-- Action pour ouvrir la liste des salles -->
+	<act_window id="action_agence_salle"
+		name="Gestion des Salles" res_model="agence.salle"
+		view_mode="tree,form" />
 		
 	<!-- L'Option du Menu pour ouvrir la liste des Salles -->
 	<menuitem id="menu_agence_salle" name="Salles"
-		parent="menu_agence" />
+		parent="menu_agence" action="action_agence_salle" />
 		
 	<!-- Action pour ouvrir la liste des salles Privee -->
 	<act_window id="action_agence_salle_privee"
@@ -13,7 +18,7 @@
 		view_mode="tree,form" />
 		
 	<!-- L'Option du Menu pour ouvrir la liste des Salles Privee -->
-	<menuitem id="menu_agence_salle_privee" name="Salles"
+	<menuitem id="menu_agence_salle_privee" name="Salles Privee"
 		parent="menu_agence_salle" action="action_agence_salle_privee" />
 		
 	<!-- Action pour ouvrir la liste des Bureau -->

@@ -1,7 +1,7 @@
 from odoo import fields, models
 class Salle(models.Model):
     _name = 'agence.salle'
-    _description = 'Salle'
+    _description = 'Salle Privee'
     name = fields.Char('Designation', required=True)
     isactif = fields.Boolean('Active ?')
     nbplaces = fields.Integer('Nombre de place' )
